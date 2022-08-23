@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Agendamento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="pt-3 agendamentos" >
+    <label class="fw-bolder"> Escolha um dia: </label>
+  </div>
+
+  <div class="input-group mt-3">
+    <ion-calendar [(ngModel)]="date"
+                  [type]="type"
+                  [format]="'DD-MM-YYYY'">
+    </ion-calendar>
+  </div>
+
+
+  <div class="pt-3 agendamentos" >
+    <label class="fw-bolder"> Escolha um Horario: </label>
+
+    <div class="d-flex flex-row flex-wrap justify-content-between mt-2 mb-2">
+      <div class="number-card" *ngFor="let num of numbers">
+        <span>{{num}}:00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-3 agendamentos" >
+    <label class="fw-bolder"> Cliente: </label>
+
+    <div class="card mb-3">
+      <div class="d-flex flex-row">
+        <div class="col-4">
+          <img src="assets/user.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h5 class="card-title">Maria Rosario</h5>
+            <p class="card-text"> Unha de Fibra </p>
+            <p class="card-text"> Obs: Alergia a XXX </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-3 agendamentos" >
+    <button class="btn btn-danger w-100"> Cadastro </button>
+  </div>
+
+
+
+</ion-content>

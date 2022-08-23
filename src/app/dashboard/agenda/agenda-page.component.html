@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Agenda
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="d-flex flex-row pt-3 fs-1 mt-3 align-items-end justify-content-end agendamentos">
+    <a routerLink="/cadastro" class="input-group-text text-danger"><ion-icon name="add-circle-outline"></ion-icon></a>
+  </div>
+
+  <div class="input-group mt-3">
+    <ion-calendar [(ngModel)]="date"
+                  [type]="type"
+                  [format]="'DD-MM-YYYY'">
+    </ion-calendar>
+  </div>
+
+
+  <div class="pt-3 agendamentos overflow-scroll" >
+    <h4 class="text-center fw-bold">
+      Agendamentos  {{date ? ' - ' + (date | date:'dd/MM/yyyy') : ''}}
+    </h4>
+
+    <div class="mb-2" *ngFor="let item of items">
+      <div class="d-flex flex-column p-2 social card-bg">
+        <div>
+          <span class="fw-bolder">Maria Rosario da Silva</span>
+        </div>
+
+        <div>
+          <span>10:00 ás 11:00</span>
+        </div>
+
+        <div>
+          <span>QN3 CJ 20 CS22 - Taguatinga , 72592021 - DF</span>
+        </div>
+
+        <div class="d-flex flex-row fs-4 align-items-end justify-content-end">
+          <span class="input-group-text text-danger"><ion-icon name="create-outline"></ion-icon></span>
+          <span class="input-group-text text-danger"><ion-icon name="eye-outline"></ion-icon></span>
+          <span class="input-group-text text-danger"><ion-icon name="trash-outline"></ion-icon></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
