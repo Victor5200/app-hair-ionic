@@ -83,6 +83,11 @@ button {
   font-weight: bold;
 }
 
+* {
+  font-family: Raleway /* Replace with your custom font */, "ui-sans-serif" !important;
+  /* Add !important to overwrite all elements */
+}
+
 .itens-menu-logada {
   padding: 20px;
   background-color: #f7f3f3;
