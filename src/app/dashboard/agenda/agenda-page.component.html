@@ -11,7 +11,7 @@
     <button routerLink="/cadastro" class="btn btn-danger w-100 mb-3">Novo Agendamento</button>
   </div>
 
-  <div class="input-group mt-3">
+  <div class="input-group p-3">
     <ion-calendar [(ngModel)]="date"
                   [type]="type"
                   [format]="'DD-MM-YYYY'">
@@ -39,9 +39,9 @@
         </div>
 
         <div class="d-flex flex-row fs-4 align-items-end justify-content-end">
-          <span class="input-group-text text-danger"><ion-icon name="create-outline"></ion-icon></span>
-          <span class="input-group-text text-danger"><ion-icon name="eye-outline"></ion-icon></span>
-          <span class="input-group-text text-danger"><ion-icon name="trash-outline"></ion-icon></span>
+          <ion-icon class="fs-1 fw-bolder" name="create-outline"></ion-icon>
+          <ion-icon class="fs-1 fw-bolder" name="eye-outline"></ion-icon>
+          <ion-icon class="fs-1 fw-bolder" name="trash-outline"></ion-icon>
         </div>
       </div>
     </div>

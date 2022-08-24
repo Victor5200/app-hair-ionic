@@ -11,9 +11,9 @@ export class ServicoPage implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    /*for (let i = 9; i < 20; i++) {
+    for (let i = 0; i < 3; i++) {
       this.numbers.push(i);
-    }*/
+    }
   }
 
 }

@@ -8,7 +8,16 @@
 
 <ion-content [fullscreen]="true">
 
-  <div class="p-3 d-flex flex-column h-100">
+  <div class="p-3">
+    <div class="bg-primary-danger p-2 align-items-center d-flex flex-row">
+      <ion-icon class="text-white fw-bold" name="cash"></ion-icon>
+      <span class="ms-2 text-white fw-bold">Indique amigos e ganhe R$15</span>
+      <button type="button" class="ms-auto btn btn-light"> Indicar </button>
+    </div>
+  </div>
+
+
+  <div class="p-3 d-flex flex-column">
     <div *ngFor="let item of menus">
       <div class="itens-menu-logada d-flex flex-row mb-2">
         <span><ion-icon class="text-black fw-bolder" name="{{item.icon}}"></ion-icon></span>
@@ -17,6 +26,10 @@
       </div>
 
     </div>
+  </div>
+
+  <div class="p-3">
+    <button class="btn btn-danger w-100"> Sair da minha conta </button>
   </div>
 
 </ion-content>

@@ -26,7 +26,7 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 .social {
-  border: solid 1px #ccc;
+  border: solid 1px #cccccc;
   border-radius: 15px;
 }
 
@@ -67,7 +67,7 @@ button {
 }
 
 .card-bg {
-  background-color: #ededed;
+  background-color: #f7f7f7;
 }
 
 .agendamentos {
@@ -93,4 +93,13 @@ button {
   background-color: #f7f3f3;
   box-shadow: sienna;
   text-shadow: 0 0 black;
+}
+
+.bg-primary-danger {
+  background-color: #fc7e17;
+}
+
+ion-calendar {
+  border: solid 2px #ccc !important;
+  background-color: #f7f7f7 !important;
 }
