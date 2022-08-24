@@ -7,9 +7,33 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Clientes</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="pt-3 agendamentos" >
+    <button class="btn btn-danger w-100 mb-3">Novo Cliente</button>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary text-black" type="button" id="button-addon2"><ion-icon class="text-black" name="search-outline"></ion-icon></button>
+    </div>
+
+
+    <div class="card" *ngFor="let item of numbers">
+      <div class="d-flex flex-row">
+        <div class="col-4">
+          <img src="assets/user.png" class="img-fluid rounded-start h-100" alt="...">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h5 class="card-title">Maria Rosario</h5>
+            <p class="card-text"> QN3 CJ10 CS21 - Taguatinga - DF </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-3" *ngIf="!numbers || numbers.length === 0">
+    <span class="text-center">Nenhum cliente cadastrado</span>
+  </div>
+
 </ion-content>

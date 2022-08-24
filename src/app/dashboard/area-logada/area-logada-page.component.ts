@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AreaLogadaPage {
 
-  constructor() {}
+  menus = [{
+    icon: 'person',
+    name: 'Meus Dados',
+  }, {
+    icon: 'home',
+    name: 'Meus Endereços',
+  },
+  {
+    icon: 'home',
+    name: 'Meus Dados',
+  },
+  {
+    icon: 'home',
+    name: 'Meus Dados',
+  },
+  {
+    icon: 'home',
+    name: 'Meus Dados',
+  }];
+
+  constructor() {
+  }
 
 }
