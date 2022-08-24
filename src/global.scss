@@ -82,3 +82,8 @@ button {
   background-color: #efebeb;
   font-weight: bold;
 }
+
+* {
+  font-family: Raleway /* Replace with your custom font */, "ui-sans-serif" !important;
+  /* Add !important to overwrite all elements */
+}
