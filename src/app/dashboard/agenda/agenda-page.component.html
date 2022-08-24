@@ -25,26 +25,26 @@
     </h4>
 
     <div class="mb-2" *ngFor="let item of items">
-      <div class="d-flex flex-column p-2 social card-bg">
-        <div>
-          <span class="fw-bolder">Maria Rosario da Silva</span>
-        </div>
+      <ion-card>
+        <ion-item>
+          <ion-label>Maria Rosario da Silva</ion-label>
+          <ion-button fill="outline" slot="end"><ion-icon class="fs-1 fw-bolder" name="eye-outline"></ion-icon></ion-button>
+          <!--<ion-button fill="outline" slot="end"><ion-icon class="fs-1 fw-bolder" name="trash-outline"></ion-icon></ion-button>
+        --></ion-item>
 
-        <div>
-          <span>10:00 ás 11:00</span>
-        </div>
+        <ion-card-content class="d-flex flex-column">
+          <div>
+            <span class="fw-bolder">Horario: </span> <span>10:00 ás 11:00</span>
+          </div>
 
-        <div>
-          <span>QN3 CJ 20 CS22 - Taguatinga , 72592021 - DF</span>
-        </div>
-
-        <div class="d-flex flex-row fs-4 align-items-end justify-content-end">
-          <ion-icon class="fs-1 fw-bolder" name="create-outline"></ion-icon>
-          <ion-icon class="fs-1 fw-bolder" name="eye-outline"></ion-icon>
-          <ion-icon class="fs-1 fw-bolder" name="trash-outline"></ion-icon>
-        </div>
-      </div>
+          <div>
+            <span class="fw-bolder">Endereço: </span>
+            <span>QN3 CJ 20 CS22 - Taguatinga , 72592021 - DF</span>
+          </div>
+        </ion-card-content>
+      </ion-card>
     </div>
+
 
   </div>
 

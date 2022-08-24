@@ -14,7 +14,7 @@
 
     <div class="d-flex flex-column">
       <div class="input-group">
-        <span class="input-group-text text-danger" id="login"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+        <span class="input-group-text text-danger" id="login"><ion-icon name="person-circle"></ion-icon></span>
         <input type="text" class="form-control" formControlName="nome" placeholder="Nome" aria-label="Login" aria-describedby="nome">
       </div>
 
@@ -23,7 +23,7 @@
       </div>
 
       <div class="input-group mt-3">
-        <span class="input-group-text text-danger" id="cpf"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+        <span class="input-group-text text-danger" id="cpf"><ion-icon name="lock-open-outline"></ion-icon></span>
         <input type="password" class="form-control" formControlName="cpf" placeholder="Cpf" aria-label="Cpf" aria-describedby="Cpf" >
       </div>
 
@@ -37,20 +37,20 @@
 
         <div class="input-group justify-content-around">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="genero" id="genero">
+            <input class="form-check-input" type="radio" formControlName="genero" name="genero" id="genero" value="masculino">
             <label class="form-check-label" for="genero">
               Masculino
             </label>
           </div>
           <div class="form-check ml-2">
-            <input class="form-check-input" type="radio" name="genero" id="genero2" checked>
+            <input class="form-check-input" type="radio" formControlName="genero" name="genero" id="genero2" value="feminino">
             <label class="form-check-label" for="genero2">
               Feminino
             </label>
           </div>
 
           <div class="form-check ml-2">
-            <input class="form-check-input" type="radio" name="genero" id="genero3" checked>
+            <input class="form-check-input" type="radio" formControlName="genero" name="genero" id="genero3" value="outro">
             <label class="form-check-label" for="genero3">
               Outro
             </label>
@@ -63,7 +63,7 @@
       </div>
 
       <div class="input-group mt-3">
-        <span class="input-group-text text-danger" id="email"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+        <span class="input-group-text text-danger" id="email"><ion-icon name="mail-open-outline"></ion-icon></span>
         <input type="email" class="form-control" formControlName="email" placeholder="E-mail" aria-label="E-mail" aria-describedby="E-mail" >
       </div>
 
@@ -73,7 +73,7 @@
 
 
       <div class="input-group mt-3">
-        <span class="input-group-text text-danger" id="nascimento"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+        <span class="input-group-text text-danger" id="nascimento"><ion-icon name="calendar-number"></ion-icon></span>
         <input type="date" class="form-control" formControlName="nascimento" placeholder="Data de Nascimento" aria-label="nascimento" aria-describedby="nascimento" >
       </div>
 
@@ -87,20 +87,20 @@
 
       <div class="input-group justify-content-around">
         <div class="form-check">
-          <input class="form-check-input" id="autonomo" type="radio" formControlName="vinculo" name="vinculo">
+          <input class="form-check-input" id="autonomo" type="radio" formControlName="vinculo" name="vinculo" value="autonomo">
           <label class="form-check-label" for="autonomo">
             Autonomo
           </label>
         </div>
         <div class="form-check ml-2">
-          <input class="form-check-input" id="clt" type="radio" name="vinculo" formControlName="vinculo" checked>
+          <input class="form-check-input" id="clt" type="radio" name="vinculo" formControlName="vinculo" value="clt">
           <label class="form-check-label" for="clt">
             CLT
           </label>
         </div>
 
         <div class="form-check ml-2">
-          <input class="form-check-input" id="salao" type="radio" name="vinculo" formControlName="vinculo" checked>
+          <input class="form-check-input" id="salao" type="radio" name="vinculo" formControlName="vinculo" value="salao">
           <label class="form-check-label" for="salao">
             Salão
           </label>
