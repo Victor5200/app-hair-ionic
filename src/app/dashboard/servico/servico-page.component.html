@@ -15,22 +15,22 @@
       <button class="btn btn-outline-secondary text-black" type="button" id="button-addon2"><ion-icon class="text-black" name="search-outline"></ion-icon></button>
     </div>
 
-    <div class="card mb-3" *ngFor="let item of numbers">
+    <div class="card mb-3" *ngFor="let item of servicos">
       <div class="d-flex flex-row">
         <div class="col-4">
           <img src="assets/cilhos.jpg" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-8">
           <div class="card-body">
-            <h5 class="card-title">Extensão de Cilhos</h5>
-            <p class="card-text"> Valor: R$ 160,00 </p>
+            <h5 class="card-title">{{item.descricao}}</h5>
+            <p class="card-text"> Valor: R$ {{item.valor}} </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="p-3" *ngIf="!numbers || numbers.length === 0">
+  <div class="p-3" *ngIf="!servicos || servicos.length === 0">
     <span>Nenhum serviço cadastrado</span>
   </div>
 

@@ -6,14 +6,24 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['servico-page.component.scss']
 })
 export class ServicoPage implements OnInit {
-  numbers = [];
+  servicos = [{
+    id: 1,
+    descricao: "cilios",
+    valor: 30
+  },{
+    id: 2,
+    descricao: "sobrancelha",
+    valor: 150
+  },{
+    id: 3,
+    descricao: "unhas",
+    valor: 130
+  }];
 
   constructor() {}
 
   ngOnInit(): void {
-    for (let i = 0; i < 3; i++) {
-      this.numbers.push(i);
-    }
+
   }
 
 }

@@ -19,7 +19,7 @@ const routes: Routes = [
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../cadastrar/cadastrar.module').then(m => m.CadastrarModule)
+        loadChildren: () => import('./acoes/acoes.module').then(m => m.AcoesModule)
       },
 
       {
