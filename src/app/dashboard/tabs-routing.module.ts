@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
+
+
 const routes: Routes = [
   {
     path: '',
@@ -17,7 +19,7 @@ const routes: Routes = [
       },
       {
         path: 'tab3',
-        loadChildren: () => import('./servico/servico.module').then(m => m.ServicoModule)
+        loadChildren: () => import('../cadastrar/cadastrar.module').then(m => m.CadastrarModule)
       },
 
       {

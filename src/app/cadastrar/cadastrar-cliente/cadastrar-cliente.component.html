@@ -1,0 +1,83 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Clientes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div class="cliente p-3">
+    <div class="btn btn-outline-warning w-50  d-flex flex-column align-content-start">
+      <span> Importar contato </span>
+    </div>
+
+    <div class="texto">Nome*</div>
+    <div class="cliente p-1">
+      <input type="text" class="form-control" placeholder="Digite o nome do cliente" aria-label="Recipient's username"
+             aria-describedby="button-addon2">
+    </div>
+
+    <div class="texto">CPF*</div>
+    <div class="cliente p-1">
+      <input type="text" class="form-control" placeholder="Digite o CPF" aria-label="Recipient's username"
+             aria-describedby="button-addon2">
+    </div>
+
+    <label class="texto" for="sexo">Sexo</label>
+    <select name="sexo" id="sexo" class="form-control">
+      <option value="mas">Masculino</option>
+      <option value="fem">Feminino</option>
+      <option value="pref">Prefiro nao dizer</option>
+
+    </select>
+
+    <div class="texto">Telefones*</div>
+
+    <div class="cliente d-flex flex-row p-1">
+      <input class="form-control w-25" type="text" name="ddd" size="1" maxlength="2">
+      <input class="form-control"  type="text" name="numero" size="6" maxlength="9">
+      <select name="tel" id="tel" class="form-control">
+        <option value="cel">Celular</option>
+        <option value="fixo">Fixo</option>
+      </select>
+    </div>
+
+    <div class="cliente p-1">
+      <div class="btn btn-outline-warning w-50  d-flex flex-column align-content-start">
+        <span> + Adicionar </span>
+      </div>
+    </div>
+
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Preencher cadastro completo</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+      <label>E-mail</label>
+          <div class="cliente p-1">
+            <input type="text" class="form-control" placeholder="Digite seu E-mail" aria-label="Recipient's username"
+                   aria-describedby="button-addon2">
+          </div>
+
+
+          <label>Data de Nascimento</label>
+          <div class="input-group">
+            <input class="form-control w-25" type="text" name="dia" placeholder="dia">
+            <input class="form-control w-25" type="text" name="mes" placeholder="mes">
+            <input class="form-control w-25" type="text" name="ano" placeholder="ano">
+          </div>
+        </div>
+
+        
+      </ion-accordion>
+    </ion-accordion-group>
+
+  </div>
+
+
+
+</ion-content>
